@@ -7,6 +7,7 @@
   "modules.root": "es",
   "sideEffects": false,
   "scripts": {
+    "start": "node src/index.js",
     "lint": "eslint src test --cache",
     "lint:fix": "eslint --fix src test --cache",
     "lint:watch": "esw --watch src test --cache",
@@ -95,5 +96,13 @@
     "rimraf": "^2.6.0",
     "semantic-release": "^15.1.4",
     "travis-deploy-once": "^4.3.1"
+  },
+  "dependencies": {
+    "@jcoreio/async-throttle": "^1.1.2",
+    "csv": "^4.0.0",
+    "fs-extra": "^7.0.1",
+    "line-reader": "^0.4.0",
+    "superagent": "^4.0.0-beta.5",
+    "superagent-throttle": "^0.2.5"
   }
 }
